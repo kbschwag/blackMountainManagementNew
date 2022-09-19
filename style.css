@@ -1,0 +1,371 @@
+/* HTML body and title tags */
+
+html, body {
+  margin: 0;
+  padding:0;
+  font-family: "Nanum Gothic";
+}
+body {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 25px;
+  color: #3b4045;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  margin: 0px;
+}
+
+h1,
+.h1 {
+  font-size: 44px;
+  line-height: 56px;
+}
+
+h2,
+.h2 {
+  font-size: 50px;
+  padding: 30px;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  line-height: 1.6;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Rampart One"
+}
+
+h3,
+.h3 {
+  font-size: 30px;
+  line-height: 25px;
+  padding: 20px;
+}
+
+h4,
+.h4 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  transition: all 0.2s ease-in-out 0s;
+}
+
+
+
+/* Home Banner */
+
+
+.banner-home {
+  position: relative;
+    background-attachment: fixed;
+   background-image: url("images/home.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 101vh;
+    width: 100%;
+   background-size: cover;
+}
+.home-banner-inner {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 70px;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.arrow {
+  border: solid #FFF;
+  border-width: 0 7px 7px 0;
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  padding: 3px;
+  font-size: 30px;
+  border-radius: 10%;
+  margin-top: 50px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/* Home Services Pick */
+
+
+.box-area{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+  height: 80vh;
+}
+
+
+.box-area a{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  margin: 30px;
+  padding: 20px;
+  transition: .3s;
+  margin-top: 50px;
+  text-decoration: none;
+  border-radius: 40px;
+  background-cover: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+.header-text {
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  line-height: 1.6;
+  text-shadow: 1.5px 1.5px #000;
+}
+
+@media only screen and (max-width: 600px) {
+  .box-area {
+    grid-template-columns: auto;
+    height: 200vh;
+  }
+}
+
+
+.box-area a:hover {
+  transform: scale(1.1);
+}
+
+.box-area a:nth-child(1) {
+  background-image: url(https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/styles/full_width/public/thumbnails/image/Population_Growth.jpg?itok=Qu0q8YmEG);
+}
+
+.box-area a:nth-child(2) {
+  background-image: url(https://www.compass.com/m/d94923c07ddc32e0511c4df9d7a595f3fc94630f_img_0_35e9c/origin.jpg);
+}
+
+/* areas we service */
+
+
+.banner-more {
+  position: relative;
+    background-attachment: fixed;
+   background-image: url("images/more.jpeg");
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 101vh;
+    width: 100%;
+   background-size: cover;
+}
+.more-banner-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.more-banner-inner-text {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+    color: white;
+    padding: 200px;
+}
+
+.btn-main {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 30px;
+  display: inline-block;
+  box-shadow: 0 5px 10px;
+  margin: 30px;
+  border-style: solid;
+}
+
+.more-banner-inner-text li {
+  font-size: 25px;
+  line-height: 2;
+}
+
+.btn-main:hover {
+  background-color: #FFF;
+  color: black;
+}
+
+.home-services {
+  overflow-x: hidden !important;
+  overflow: hidden !important;
+}
+
+.area {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+/* Here what people say */
+
+
+  .slide-container {
+      position: relative;
+      width: 100%;
+      height:85vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden !important;
+  }
+
+  .image-slider{
+      width: 100%;
+      height: 600px;
+      position: absolute;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 1s;
+  }
+  
+  .slides-div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 30px;
+  }
+
+  .img{
+      position: relative;
+      width: 500px;
+      height: 370px;
+      transition: 0.5s;
+  }
+
+  .button {
+      position: absolute;
+      width: 500px;
+      height: 370px;
+      transition: 0.5s;
+      background-color: rgba(67, 67, 151, 0.2);
+  }
+
+  #slider-span1:target ~ .image-slider #img1,
+  #slider-span1:target ~.image-slider #button-1{
+      width:700px;
+      height: 585px;
+      background-color: transparent;
+  }
+  #slider-span2:target ~ .image-slider #img2,
+  #slider-span2:target ~.image-slider #button-2{
+      width:700px;
+      height: 585px;
+      background-color: transparent;
+  }
+  #slider-span3:target ~ .image-slider #img3,
+  #slider-span3:target ~.image-slider #button-3{
+      width: 700px;
+      height: 585px;
+      background-color: transparent;
+  }
+
+  #slider-span1:target ~.image-slider{
+      left:20%;
+  }
+  #slider-span2:target ~.image-slider{
+      left:0%;
+  }
+  #slider-span3:target ~.image-slider{
+      left:-20%;
+  }
+
+
+.banner-about {
+  position: relative;
+    background-attachment: fixed;
+   background-image: url("images/home.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 101vh;
+    width: 100%;
+   background-size: cover;
+}
+.about-banner-inner {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 70px;
+    transform: translateY(-50%);
+    color: white;
+}
+
+
+.footer-menu a {
+  font-size: 14;
+  font-weight: 700;
+  color: #444;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.l-footer.layout_compact{
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+    line-height: 20px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #A58C50;
+}
+
+.l-subfooter.at_bottom {
+    background-color: #A58C50;
+}
+
+.l-subfooter {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.l-subfooter {
+    position: relative;
+    margin: 0 auto;
+}
